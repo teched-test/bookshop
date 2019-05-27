@@ -1,0 +1,15 @@
+{
+    "features": {
+        "compositions": true,
+        "codelists": true
+    },
+    "build": {
+        "tasks": [
+            { "for": "hana",    "src":"db",  "options":{ "model":["db","srv"] } },
+            { "for": "node-cf", "src":"srv", "options":{ "model":["srv","app"] } },
+            { "for": "fiori",   "src": "app/admin" },
+            { "for": "fiori",   "src": "app/browse" },
+            { "for": "fiori",   "src": "app/orders" }
+        ]
+    }
+}

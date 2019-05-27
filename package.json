@@ -1,0 +1,34 @@
+{
+  "name": "@sap/capire-bookshop",
+  "version": "1.0.0",
+  "description": "A simple bookshop application, build in a self-contained all-in-one fashion, i.e. w/o reusing other packages.",
+  "repository": "https://github.wdf.sap.corp/caps/bookshop.git",
+  "license": "ISC",
+  "dependencies": {
+    "@sap/cds": "latest",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "sqlite3": "^4.0.7"
+  },
+  "scripts": {
+    "setup": "npm install && npm run deploy",
+    "deploy": "cds deploy db --to sqlite:db/bookshop.db",
+    "start": "cds run"
+  },
+  "cds": {
+    "odata": {
+      "FIXME": "this shall be the default -> hence vanish here!",
+      "version": "v4"
+    },
+    "requires": {
+      "db": {
+        "kind": "sqlite",
+        "model": "db",
+        "credentials": {
+          "database": "db"
+        }
+      }
+    }
+  }
+}

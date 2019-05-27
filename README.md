@@ -1,1 +1,2 @@
-# bookshop
+# Bookshop Sample App
+
