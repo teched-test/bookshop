@@ -1,9 +1,13 @@
 .idea/
+.vscode/
 gen/
 .gen/
+.mta/
 node_modules/
 target/
 *.db
 .DS_Store
-_out
+_out/
 default-*.json
+*.mtar
+manifest.yaml

@@ -1,0 +1,26 @@
+{
+  "welcomeFile": "/index.html",
+  "authenticationMethod": "none",
+  "logout": {
+    "logoutEndpoint": "/do/logout"
+  },
+  "routes": [
+    {
+      "source": "^/.*(html|js)$",
+      "localDir": "."
+    },
+    {
+      "source": "^/sapui5/.*",
+      "localDir": "."
+    },
+    {
+      "source": "^/.*/webapp/.*",
+      "localDir": "."
+    },
+    {
+      "source": "/",
+      "destination": "srv_api",
+      "csrfProtection": false
+    }
+  ]
+}
